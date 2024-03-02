@@ -1,0 +1,26 @@
+ol {
+  margin-left: -40px;
+  margin-top: -20px;
+  list-style-position: inside;
+}
+/* This (...{}) element selector selects based on the html tag name*/
+p {
+  COLOR:red;
+}
+/* This (.asd{}) selects the value of a class attribute */
+ .note {
+  font-size: 20px;
+}
+/* This (#...{}) is for selecting the value of an ID attribute*/
+#id-selector-demo {
+  color: green;
+}
+/* This is for selecting class elements with different values */
+li[value="4"]{
+  color:blue
+}
+/*This (* {}) "universal selector" means; selects all. So, rules you want to apply to the whole document.*/
+* {
+  text-align: center;
+}
+/* Write your CSS below, don't change the rules above. */
