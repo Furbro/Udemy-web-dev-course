@@ -1,0 +1,30 @@
+/* Her lærte jeg at det er lurt å samle de samme type elementene eller klassene på samme sted i koden
+(sett bortifra kaskadereglene) Da er det lettere å lese og feilsjekke koden etterpå.
+Da i dette eksempele outer-box, box og inner-box. 
+Som jeg i utgangspunktet hadde lagt inn nederst på kodearket (høyere prioritet, men ingen forskjell på resultatet) */
+
+#outer-box {
+  background-color: purple;
+  padding: 10px;
+}
+
+.box {
+  background-color: blue;
+  padding: 10px;
+}
+
+.inner-box{
+  background-color: red;
+  padding: 10px;
+}
+
+p {
+  color: yellow;
+  margin: 0;
+  padding: 0;
+}
+
+.white-text {
+  color: white;
+}
+
