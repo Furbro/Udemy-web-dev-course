@@ -7,7 +7,7 @@ Tar alt som er staget og lager en ny commit med disse filene
 git add filnavn
 Velger en spesifikke fil
 
-git add.
+git add .
 Stager alle filer
 
 git push origin main
