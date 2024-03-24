@@ -1,1 +1,46 @@
 /* Write your code here: */
+h1, h2 {
+    /* use , to group selectors*/
+    color: blueviolet;
+}
+
+/*use the class to be more specific when using the following code
+you could select div > p instead of .box > p, but if the wepage
+had longer code, then you would possibly be targeting all div > p.
+as an eksample; the more specific the target, the fewer it will target!*/
+
+.box > p {
+    /*use > to select 1 level down selector 
+    from parent selector to change that element */
+    color: firebrick;
+}
+
+.box li {
+    /*ancestor and decendant, here we are using 
+    space (1 spacing to target a decendant of 
+    the ancestpor selector to change an element)*/
+    color: blue;
+}
+
+/*chaining = apply where all selectors are true.
+We can use this to be really, really specific
+e.g. h1, #id, .class; p.done, p#done h1.*/
+
+li.done {
+    color: seagreen;
+}
+
+/*combining combiners (FUN!)
+e.g. combining ancestor and chaining
+- selector selectorselector
+- selector > selectorselector 
+(only if selectorselector is 1 level down) 
+- hover over the code to see where it selects*/
+
+ul p.done {
+    font-size: 0.5rem;
+}
+
+
+
+
