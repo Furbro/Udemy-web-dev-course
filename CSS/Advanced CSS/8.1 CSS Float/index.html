@@ -9,29 +9,65 @@
     <meta charset="UTF-8" />
     <title>CSS Float</title>
     <style>
-      div {
-        display: inline-block;
-        width: 40%;
+      div,
+      footer {
+        box-shadow: 8px 8px black;
+        border: 4px solid black;
       }
 
-      p {
-        font-size: 2em;
+      body {
+        background: rgba(255, 171, 119, 0.909);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 25px;
+        row-gap: 16px;
+        margin: 16px;
+        max-width: 700px;
+        margin-inline: auto;
       }
+
+      div {
+        display: inline-block;
+        padding: 8px;
+      }
+
+      p,
+      footer {
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      img {
+        float: left;
+        margin: 8px;
+        margin-left: 0;
+      }
+
+      body img:last-of-type {
+        width: 200px;
+      }
+
+      /*cat bracket*/
 
       .cat {
         background-color: aquamarine;
         float: left;
       }
 
+      /*dog bracket */
+
       .dog {
         background-color: coral;
         float: right;
       }
 
+      /*footer*/
+
       footer {
         text-align: center;
         background-color: blueviolet;
-        clear: both;
+        grid-column: span 2;
+        padding: 16px 8px;
       }
     </style>
   </head>
