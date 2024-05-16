@@ -1,0 +1,55 @@
+/* Dette er den koden jeg følte fungerte best responsivt for min del, og jeg selv synes den så bedre ut enn den grønne som bare pressa størrelsen sin ut av siden*/
+
+Forsøk nr: 1 |
+/* Write your CSS code below to make the blue items size, grow and shrink like the green ones.*/
+
+.container {
+ display: flex;
+}
+  
+.container > * {
+  max-width: 200px;
+
+}
+
+.item1 {
+ flex-grow: 1;
+}
+
+.item2 {
+flex-grow: 1;
+}
+
+.item3 {
+ flex-grow: 2;
+ max-width: 400px;
+}
+|
+
+/* Dette var det jeg mener er det Angela ber om. At det skal være likt som den grønne over. 
+Jeg personlig ville hatt scala ned alt, men da fokusert på å gjøre det i en gitt rekkefølge (noe å lære seg)*/
+Forsøk nr. 2 |
+
+/* Write your CSS code below to make the blue items size, grow and shrink like the green ones.*/
+
+.container {
+ display: flex;
+}
+  
+.container > * {
+ flex: 0 0 200px;
+}
+
+.item1 {
+ flex-grow: 1;
+ flex-shrink: 1;
+}
+
+.item2 {
+
+}
+
+.item3 {
+ flex: 0 0 400px;
+}
+|
