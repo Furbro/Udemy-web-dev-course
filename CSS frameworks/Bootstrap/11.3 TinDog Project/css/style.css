@@ -16,6 +16,11 @@
   }
 }
 
+.iphone-img {
+  max-height: 500px;
+  width: auto;
+}
+
 .icon-square {
   width: 3rem;
   height: 3rem;
@@ -27,10 +32,16 @@
   border-radius: 50%;
 }
 
-#title {
-  padding-left: 25x;
-}
-
 #footer {
   margin-bottom: 0;
+}
+
+#pricing {
+  margin-top: 25px;
+  margin-bottom:75px;
+}
+
+.testimonial {
+  max-height: 40px;
+  width: auto;
 }
