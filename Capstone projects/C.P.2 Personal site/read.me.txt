@@ -66,4 +66,12 @@ When I hire developers, I always ask for a portfolio. I consider what they have 
 Watching a video is often not enough to learn a skill. That's why these capstone projects are a great opportunity to identify your weak points. While you're building, you'll find yourself stuck or forgetting how to do things. Great! It's then time to review previous lessons or online documentation to fill your knowledge gaps.
 
 
+Resources used:
+- Cover Template · Bootstrap v5.3
+- https://www.freepik.com/
+- https://icons8.com/icons
+- https://fontawesome.com/
+- https://getbootstrap.com/
+- 
+
 
