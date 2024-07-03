@@ -48,42 +48,47 @@ Timeline
     <section id="hero" class="gradient-background-sunrise">
       <div class="container" style="background-color: skyblue;">
         <div class="row " style="background-color: aquamarine;">
-          <div class="col" style="background-color: bisque;">
+          <div class="col-6" style="background-color: bisque;">
             <h1>Fritjof Moen</h1>
             <h2>Aspiring web developer</h2>
           </div>
-          <div class="col" style="background-color: chartreuse;">
-            <img 
-              src="./svg/html5.svg" 
-              class="rounded d-block" 
-              width="25px" 
-              height="25px" 
-              alt="html" 
-            />
+          <div class="col-6">
+            <div class="col" style="background-color: chartreuse;">
+              <img 
+                src="./svg/html5.svg" 
+                class="rounded d-block" 
+                width="75px" 
+                height="75px" 
+                alt="html" 
+              />
+            </div>
+            <div class="col" style="background-color: aqua;">
+              <img 
+                src="./svg/css3-alt.svg" 
+                alt="css"
+                width="75px" 
+                height="75px" 
+              />
+            </div>
+            <div class="col">
+              <img 
+                src="./svg/bootstrap.svg" 
+                alt="bootstrap"
+                width="75px" 
+                height="75px" 
+              />
+            </div>
           </div>
-          <div class="col" style="background-color: aqua;">
-            <img 
-              src="./svg/css3-alt.svg" 
-              alt="css"
-              width="25px" 
-              height="25px" 
-            />
-          </div>
-          <div class="col">
-            <img 
-              src="./svg/bootstrap.svg" 
-              alt="bootstrap"
-              width="25px" 
-              height="25px" 
-            />
-          </div>
+          
         </div>
         <div class="row">
-          <div class="col">
+          <div class="col-12">
             <img 
-              src="./svg/sun-solid.svg" 
+              src="./svg/sunrise.svg" 
               alt="sun"
-              width="75px" height="75px" 
+              width="400px" 
+              height="" 
+              style="background-color: blueviolet;"
             />
           </div>
         </div>
@@ -296,49 +301,61 @@ Timeline
       - web design project (/)/(+) pricing table
       - mondrean painting
       -->
-      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h2 class="carousel-img">Tindog (Bootstrap project) - start</h2>
+              <img src="./imgs/projects/tindog-image1.PNG" class="d-block w-100" alt="tindog-start-page">
+            </div>
+            <div class="carousel-item">
+              <h2 class="carousel-img">Tindog - middle-top</h2>
+              <img src="./imgs/projects/tindog-image2.PNG" class="d-block w-100" alt="tindog-middle-page">
+            </div>
+            <div class="carousel-item">
+              <h2 class="carousel-img">Tindog - middle-bottom</h2>
+              <img src="./imgs/projects/tindog-image3.PNG" class="d-block w-100" alt="tindog-middle-bottom-page">
+            </div>
+            <div class="carousel-item">
+              <h2 class="carousel-img">Tindog - end</h2>
+              <img src="./imgs/projects/tindog-image4.PNG" class="d-block w-100" alt="tindog-end-page">
+            </div>
+            <div class="carousel-item">
+              <h2 class="carousel-img">Webdesign on canva.com - start</h2>
+              <img src="./imgs/projects/1.png" class="d-block w-100" alt="webdesign-1">
+            </div>
+            <div class="carousel-item">
+              <h2 class="carousel-img">Webdesign - middle</h2>
+              <img src="./imgs/projects/2.png" class="d-block w-100" alt="webdesign-2">
+            </div>
+            <div class="carousel-item">
+              <h2 class="carousel-img">Webdesign - end</h2>
+              <img src="./imgs/projects/3.png" class="d-block w-100" alt="webdesign-3">
+            </div>
+            <div class="carousel-item">
+              <h2 class="carousel-img">Grid - Mondrian painting</h2>
+              <img src="./imgs/projects/mondrian-painting.PNG" class="d-block w-100" alt="mondrian-painting">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active carousel-item-start">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Example headline.</h1>
-                <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item carousel-item-next carousel-item-start">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>Some representative placeholder content for the second slide of the carousel.</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect></svg>
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
-                <p>Some representative placeholder content for the third slide of this carousel.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
     </section>
 
@@ -349,6 +366,58 @@ Timeline
       bottom column with intrest icons
       -->
 
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <img 
+              src="..." 
+              alt="badminton-icon"
+              class="about-me-icons"
+            >
+          </div>
+          <div class="col-2">
+            <img 
+              src="..." 
+              alt="cooking-icon"
+              class="about-me-icons"
+            >
+          </div>
+          <div class="col-2">
+            <img 
+              src="..." 
+              alt="fishing-icon"
+              class="about-me-icons"
+            >
+          </div>
+          <div class="col-2">
+            <img 
+              src="..." 
+              alt="gaming-icon"
+              class="about-me-icons"
+            >
+          </div>
+          <div class="col-2">
+            <img 
+              src="..." 
+              alt="golf-icon"
+              class="about-me-icons"
+            >
+          </div>
+          <div class="col-2">
+            <img 
+              src="..." 
+              alt="swimming-icon"
+              class="about-me-icons"
+            >
+          </div>
+        </div>
+      </div>
+
+      <!--  Attribute 
+        <a href="https://www.freepik.com/icon/bakery_4937230#fromView=search&page=1&position=0&uuid=098c488a-aabf-4472-8006-5b1f85c3d090">Icon by Freepik</a>
+        <a href="https://www.freepik.com/search">Icon by Freepik</a>
+        -->
+        
     </section>
 
     <section id="contact">

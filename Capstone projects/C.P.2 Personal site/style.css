@@ -1,3 +1,21 @@
+body {
+
+}
+
+.gradient-background-sunrise {
+    background-image: linear-gradient(red, yellow, green);
+}
+
 #hero {
     background-image: ;
+}
+
+.carousel-img {
+    display: flex;
+    justify-content: center;
+}
+
+.about-me-icons {
+    max-height: 50px;
+    background-color: red;
 }
