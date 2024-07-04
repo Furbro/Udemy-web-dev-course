@@ -1,21 +1,50 @@
-body {
-
-}
-
 .gradient-background-sunrise {
-    background-image: linear-gradient(red, yellow, green);
+    background-image: linear-gradient(#EE4E4E, #FFC700);
 }
 
-#hero {
-    background-image: ;
+.zeyada-regular {
+    font-family: "Zeyada", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+}
+  
+
+li {
+    list-style: none;
 }
 
-.carousel-img {
-    display: flex;
-    justify-content: center;
+ol {
+    padding: 0;
 }
 
-.about-me-icons {
-    max-height: 50px;
-    background-color: red;
+li > img {
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.card {
+    background-color: #FFF455;
+} 
+
+.coding-language-icon {
+    color:#013d3796;
+}
+
+.carousel-text {
+    text-align: left;
+}
+
+.hobbies {
+    max-height: 90px;
+}
+
+.gradient-background-sunset {
+    background-image: linear-gradient(#FFC700, #EE4E4E);
 }
