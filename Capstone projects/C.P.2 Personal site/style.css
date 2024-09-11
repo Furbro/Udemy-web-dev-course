@@ -41,6 +41,10 @@ li > img {
     text-align: left;
 }
 
+.carousel-item {
+    add responsiveness to have the same image size
+}
+
 .hobbies {
     max-height: 90px;
 }
