@@ -19,33 +19,41 @@ body {
     background-color: yellow;
 }
 
-#startQuiz {}
+#startQuiz {
+    background-color: red;
+}
 
-.question {}
-.answer {}
+.question {
+    color: whitesmoke;
+    background-color: tomato;
+}
+.answerContainer {
+    color: whitesmoke;
+    background-color: tomato;
+}
+.option{
+    color: whitesmoke;
+    background-color: tomato;
+}
+
+#a1{
+    visibility: hidden;
+}
+
+#q1{}
 
 #q1a {}
 #q1b {}
 #q1c {}
 #q1d {}
 
-#q2a {}
-#q2b {}
-#q2c {}
-#q2d {}
+/*
+#a2{} #q2{} #q2a {} #q2b {}#q2c {} #q2d {}
 
-#q3a {}
-#q3b {}
-#q3c {}
-#q3d {}
+#a3{} #q3{} #q3a {} #q3b {} #q3c {} #q3d {}
 
-#q4a {}
-#q4b {}
-#q4c {}
-#q4d {}
+#a4{} #q4{} #q4a {} #q4b {} #q4c {} #q4d {}
 
-#q5a {}
-#q5b {}
-#q5c {}
-#q5d {}
+#a5{} #q5{} #q5a {} #q5b {} #q5c {} #q5d {}
+*/
 
