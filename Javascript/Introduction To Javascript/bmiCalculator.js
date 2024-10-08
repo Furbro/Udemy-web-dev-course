@@ -47,16 +47,16 @@ function bmiCalculator(weight, height){
 let bmi = bmiCalculator(65, 1.8)
 console.log(bmi);
 
-/* udemy solution: */
+/* udemy solution alfa: */
 
 function bmiCalculator(weight, height) {
     let bmi = weight / (height*height);
-    return Math.round(bmi);
+    return bmi;
 }
 
-/* alt. 2: */
+/* beta: */
 
 function bmiCalculator(weight, height) {
-    let bmi = weight / Math.pow(height);
-    return bmi;
+    let bmi = weight / Math.pow(height, 2);
+    return Math.round(bmi);
 }
