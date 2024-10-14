@@ -28,20 +28,32 @@ Including punctuation and capitalisation.
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI Calculator</title>
     <link rel="stylesheet" href="./bmiAdvanced.css" />
+    <script src="./bmiAdvanced.js" defer></script>
   </head>
   <body>
     <div class="outerContainer">
       <div class="container">
+        <h2 class="title">Body Mass Index calculator</h2>
         <div class="inputContainer">
-          <h2 class="title">Body Mass Index calculator</h2>
           <form action="" method="get" class="bmiForm">
-            <label for="bodyWeight" class="text">Please insert your bodyweight</label>
-            <input type="text" name="bodyWeight" id="bodyWeight">kilos</input>
-            <p class="text">
-              Please insert your height using . as a separator.
-            </p>
-            <textarea name="bodyheight" id="bodyheight">1.8</textarea>
-            <button class="calculate textResult">Calculate!</button>
+            <div>
+              <div>
+                <label for="bodyWeight" id="bW" class="text">Weight (kg)</label>
+                <input
+                  type="text"
+                  name="bodyWeight"
+                  id="bodyWeight"
+                  placeholder="75"
+                />
+              </div>
+              <div>
+                <label id="bH" class="text"> Height (cm) </label>
+                <input name="bodyHeight" id="bodyHeight" placeholder="1.8" />
+              </div>
+            </div>
+            <button class="calculate" id="calculate" disabled>
+              Calculate!
+            </button>
           </form>
         </div>
         <div class="resultsContainer">
