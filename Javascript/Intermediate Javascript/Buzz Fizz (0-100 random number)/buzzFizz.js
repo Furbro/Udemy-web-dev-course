@@ -8,12 +8,10 @@ function fizzBuzz() {
 */
 
 
-function fizzBuzz2 (){
+function fizzBuzz2 (targetSize){
     const output = [];
     let count = 1;
-    while (count <= 20){
-        
-        
+    while (count <= targetSize){
         if (count%3 === 0 && count%5 === 0) {
             output.push("Fizz Buzz");
         } else if (count%3 === 0 && !count%5 === 0){
@@ -26,7 +24,7 @@ function fizzBuzz2 (){
     console.log(output)
 }
 
-console.log(fizzBuzz2())
+console.log(fizzBuzz2(100))
 
 /*
 
