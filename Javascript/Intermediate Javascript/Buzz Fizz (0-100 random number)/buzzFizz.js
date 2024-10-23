@@ -6,19 +6,27 @@ function fizzBuzz() {
     console.log(output)
 } 
 */
-const output = [];
-const count = 1;
 
 
 function fizzBuzz2 (){
-    output.push(count);
-    count++;
-
-    if (count%3 && count%5){return "Fizz Buzz"} else if (count%3 && !count%5) return "Fizz"
-    if (!(count%3) && count%5) return "Buzz"
-    else return count 
+    const output = [];
+    let count = 1;
+    while (count <= 20){
+        
+        
+        if (count%3 === 0 && count%5 === 0) {
+            output.push("Fizz Buzz");
+        } else if (count%3 === 0 && !count%5 === 0){
+            output.push("Fizz");
+        } else if (!(count%3 === 0) && count%5 ===0){
+            output.push("Buzz");
+        } else output.push(count);
+        count++
+    }
     console.log(output)
 }
+
+console.log(fizzBuzz2())
 
 /*
 
