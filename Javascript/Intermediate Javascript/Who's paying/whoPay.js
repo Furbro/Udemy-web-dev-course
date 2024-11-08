@@ -35,15 +35,15 @@ const names = [
 ]
 console.log(whosPaying(names))
 
-/*
-udemy solution:
-function whosPaying(names) {
 
-    const numberOfPeople = names.lenght
-    const randomPersonPostion = Math.floor(Math.random()* numberOfPeople)
-    const randomPerson = names[randmoPersonPosition]
+// udemy solution:
+// function whosPaying(names) {
 
-    return randomPerson + " is going to buy lunch today!"
-}
+//     const numberOfPeople = names.lenght
+//     const randomPersonPostion = Math.floor(Math.random()* numberOfPeople)
+//     const randomPerson = names[randmoPersonPosition]
 
-whosPaying("Are", "Arnfinn", "John Doe")
+//     return randomPerson + " is going to buy lunch today!"
+// }
+
+// whosPaying("Are", "Arnfinn", "John Doe")

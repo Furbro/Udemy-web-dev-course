@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>My webpage</title>
+  </head>
+  <!-- This is a way of writing javascript inline; pro tip: AVOID: <body onload="alert('Hello there govenor!')"> 
+    this way of writing javascript is a pain in the ass to debug and essentially bad practice! -->
+  <body>
+    <script type="text/javascript">
+      // This is another way of writing javascript, having it load with the website.
+      alert("hello there govenor");
+    </script>
+
+    <!--
+    The placement of the script matters a whole lot!
+    eg. if the js changes an element that does not exist, the code will not execute.
+    As a conclution we can say that the script:src should be placed last, so the page loads faster.
+    -->
+    <h2>Hello</h2>
+    <script src="./dom.js"></script>
+  </body>
+</html>
