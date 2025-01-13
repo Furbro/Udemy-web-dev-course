@@ -1,0 +1,22 @@
+body{
+    background-color: red;
+}
+
+h1{
+    color: blue;
+}
+
+.bogus-title{
+    color: rgba(0, 0, 0, 0.11);
+    font-size: xx-large;
+    font-family: sans-serif;
+    text-shadow: 1px rgba(117, 117, 117, 0.252);
+}
+
+.bogus{
+    border:0px;
+    border-radius: 13%;
+    color: rgba(0, 0, 0, 0.907);
+    background-color: rgba(255, 255, 255, 0.073);
+    text-shadow: 1px 2px 9px rgb(120, 193, 3);
+}
