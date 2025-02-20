@@ -31,6 +31,11 @@ body {
   opacity: 0.8;
 }
 
+.next-level {
+  background-color: rgba(0, 255, 0, 0.697);
+  opacity: 0.8;
+}
+
 .red {
   background-color: red;
 }
