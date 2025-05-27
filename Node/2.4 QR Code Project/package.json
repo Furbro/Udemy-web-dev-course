@@ -1,0 +1,16 @@
+{
+  "name": "qr-npm",
+  "version": "1.0.0",
+  "description": "Challenge project with a qr code generator",
+  "license": "ISC",
+  "author": "Fritjof Moen",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "inquirer": "^12.6.2",
+    "qr-image": "^3.2.0"
+  }
+}

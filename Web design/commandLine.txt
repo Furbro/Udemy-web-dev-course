@@ -1,0 +1,31 @@
+Using the command line to navigate:
+ls
+    prints out folders and files from the root directory
+cd
+    change directory; use ls to check which directory you are in and start typing the filepath you want to navigate.
+    e.g from mofr2@Genruga MINGW64 /c I would use the followig code to navigate to the koding directory; $ cd Users/mofr2/Documents/koding
+cd ~
+    Used to take you back to your root directory.
+cd ..
+    
+up button
+    used to cycle through previously written commands to use them again by not having to type it out each time.
+
+update node
+    find the latest LTS installer on https://nodejs.org
+    download the .msi installer for windows
+    run the installer to auto update node.js and npm
+    confirm the update using;
+    - node -v
+    - npm -v
+
+Update NPM only
+    npm install -g npm
+
+Install npm packages
+    npm install "package name(s)"
+        / npm i "package"
+
+What is ECM?
+
+
