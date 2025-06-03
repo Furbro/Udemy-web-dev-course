@@ -1,0 +1,218 @@
+Basic terminal commands
+    mkdir directoryName
+        crates a new directory
+            mkdir Javascript
+            mkdir "3.1 Express Server"
+    touch fileName 
+        creates a new file, remember to specify file type.
+    cp 
+        copy files or directories
+    mv
+        move files or directories
+    rm fileName
+    rm removes all files in current directory.
+    rm -r removes directory
+
+    start fileName 
+        start a file you'd like to start running.
+    open fileName 
+        Opens up a file you'd like to open in vs code.
+
+Command line navigation
+    pwd 
+        print working directory, tells you you filepath to the folder location you are in.
+    ls
+        check whats in the current directory
+        prints out folders and files from the root directory
+    cd
+        moves back to the home directory
+        change directory; use ls to check which directory you are in and start typing the filepath you want to navigate.
+        e.g from mofr2@Genruga MINGW64 /c I would use the followig code to navigate to the koding directory; $ cd Users/mofr2/Documents/koding
+
+    cd ~username
+        will put the user in the username's home directory.
+    cd ~
+        Used to take you back to your root directory.
+    cd .
+        will leave the user in the same directory they are currently in (i.e. the current directory won't change).
+        This can be useful if the user's shell's internal code can't deal with the directory they are in being recreated; running cd will place their shell in the recreated directory.
+    cd ..
+        moves back one level in the directory¨
+
+    cd dir (without a /) will put the user in a subdirectory; for example, 
+    if they are in /usr, typing cd bin will put them in /usr/bin, while cd /bin puts them in /bin.
+
+    cd .. will move the user up one directory. So, if they are /usr/bin/tmp, cd .. moves them to /usr/bin,
+    while cd ../.. moves them to /usr (i.e. up two levels). The user can use this indirection to access subdirectories too.
+    So, from /usr/bin/tmp, they can use cd ../../local to go to /usr/local
+
+    cd - 
+    will switch the user to the previous directory. For example, if they are in /usr/bin/tmp, 
+    and go to /etc, they can type cd - to go back to /usr/bin/tmp. 
+    The user can use this to toggle back and forth between two directories without pushd and popd.
+        
+    up button
+        used to cycle through previously written commands to use them again by not having to type it out each time.
+
+Node
+    update node
+        find the latest LTS installer on https://nodejs.org
+        download the .msi installer for windows
+        run the installer to auto update node.js and npm
+        confirm the update using;
+        - node -v
+        - npm -v
+
+    node -v
+    checks current node version
+
+    node REPL
+            read eval print loop; is a computer enviromnet where user inputs are read and evaluated, 
+            and then the results are returned to the user.
+            
+        write node to enter node repl;
+
+        > if the symbol left of the text (>) is after the welcome message, then you are inside node repl.
+        > here you can type commands such as;
+        > .help : Print this help message.
+        > .break : sometimes you get stuck, this gets you out
+        > .clear : alias for .break
+        > .editor : enter the editor mode
+        > .exit : exit the REPL
+        > .load : Load JS from a file into the REPL session
+        > .save : Save all evaluated commands in this REPL to a file
+        
+        REPL
+            ctrl + c x2 || .exit = exit
+
+    node index.js to run the js file.
+
+    node native modules (prebundled games):
+
+    - https://nodejs.org/docs/latest-v18.x/api/index.html = module docs.
+        app
+        file
+        network
+
+Npm
+
+    npm init 
+        initialise npm
+        This lets you create a package.json file for working with npm.
+
+    Update NPM only
+        npm install -g npm
+
+    Install npm packages
+        npm install "something" (json package file, you can add multiple packages using spacebetween)
+            https://www.npmjs.com/ find packages here.
+            Install a npm package of sorts to start working the magic on the package.json file
+            
+            Single package
+                npm i package
+            Multiple packages
+                npm i package package1 package2 package3
+    
+    Npm type;
+        Is it module or commonjs?
+
+    What is ECM?
+
+Express
+    https://expressjs.com/
+
+    Servers
+        What is a server?
+
+        steps to creating a server;
+            new directory
+            new index.js file
+            initialise npm
+            install express
+            write code in index.js
+                import express form express
+                make a constant which is the app using express
+                start listening with the app by providing the port you want to listen on
+                you can set your port to e.g. 3000
+                add a anonymous function to specify what is going to happen when the port is up and running.
+                eg console log a message that shows you which port its on.
+
+                Now you have basic server.
+
+                use get to allow the server to handle get requests by using the .get method.
+                add whichever path you'd like and use and anonymous function by tapping into request and response,
+                here you can console log your request or message.
+
+
+
+        start server
+            node "filename"
+
+        access the server
+            localhost:"/"
+            loaclhost:3000
+
+        stop server:
+            ctrl + c
+
+        check for ports LISTENING to outside interaction
+            netstat -ano | findstr "LISTENING"
+
+    Http requests
+
+        Get
+            used to request a resource from a server, for example a piece of text, a file, data from a database etc.
+
+                app.get("/"), (req, res) => {res.send("Hello, world!")};
+
+                ("/") is where you put in your address/ root. eg. loaclhost:3000/
+                => {} anonymous function
+                res.send("...") server response message
+        
+        Post
+            used to send a resource to a server, like a sign-up form.
+        
+        update methods;
+
+            Put
+                replace a resource
+                a new bicycle from amazon.
+            Patch
+                patch up a resource
+                a new wheel to replace the broken one from amazon.
+        
+        Delete
+            deletes a resource from the server or database.
+        
+        Listen
+            const port = 3000;
+
+            app.listen(port, () => {
+            console.log(`This server is running on port ${port}`);
+            });        
+
+    Simple server code (express)
+
+        import express from "express";
+
+        const app = express();
+        const port = 3000;
+
+        app.listen(port, () => {
+        console.log(`This server is running on port ${port}`); /*callback function*/
+        });
+
+    Express samplecode
+        Remember that there are parts of the code you need to change.
+
+        const express = require('express')
+        const app = express()
+        const port = 3000
+
+        app.get('/', (req, res) => {
+        res.send('Hello World!')
+        })
+
+        app.listen(port, () => {
+        console.log(`Example app listening on port ${port}`)
+        })
